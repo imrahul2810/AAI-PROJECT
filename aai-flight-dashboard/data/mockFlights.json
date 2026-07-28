@@ -1,0 +1,20 @@
+[
+  { "flightNumber": "AI 101", "airline": "Air India", "origin": "DEL", "destination": "BOM", "type": "departure", "scheduledTime": "09:15", "gate": "A4", "status": "ontime" },
+  { "flightNumber": "6E 234", "airline": "IndiGo", "origin": "BOM", "destination": "DEL", "type": "arrival", "scheduledTime": "09:40", "gate": "B2", "status": "delayed" },
+  { "flightNumber": "SG 512", "airline": "SpiceJet", "origin": "DEL", "destination": "BLR", "type": "departure", "scheduledTime": "10:05", "gate": "C1", "status": "ontime" },
+  { "flightNumber": "AI 890", "airline": "Air India", "origin": "MAA", "destination": "DEL", "type": "arrival", "scheduledTime": "10:20", "gate": "A2", "status": "cancelled" },
+  { "flightNumber": "6E 771", "airline": "IndiGo", "origin": "DEL", "destination": "HYD", "type": "departure", "scheduledTime": "10:45", "gate": "D3", "status": "ontime" },
+  { "flightNumber": "UK 955", "airline": "Vistara", "origin": "DEL", "destination": "CCU", "type": "departure", "scheduledTime": "11:00", "gate": "A6", "status": "delayed" },
+  { "flightNumber": "6E 342", "airline": "IndiGo", "origin": "GOI", "destination": "DEL", "type": "arrival", "scheduledTime": "11:15", "gate": "B4", "status": "landed" },
+  { "flightNumber": "AI 449", "airline": "Air India", "origin": "DEL", "destination": "AMD", "type": "departure", "scheduledTime": "11:30", "gate": "C5", "status": "ontime" },
+  { "flightNumber": "SG 176", "airline": "SpiceJet", "origin": "PNQ", "destination": "DEL", "type": "arrival", "scheduledTime": "11:50", "gate": "B1", "status": "delayed" },
+  { "flightNumber": "UK 811", "airline": "Vistara", "origin": "DEL", "destination": "BOM", "type": "departure", "scheduledTime": "12:10", "gate": "A3", "status": "ontime" },
+  { "flightNumber": "6E 623", "airline": "IndiGo", "origin": "LKO", "destination": "DEL", "type": "arrival", "scheduledTime": "12:25", "gate": "B3", "status": "ontime" },
+  { "flightNumber": "AI 665", "airline": "Air India", "origin": "DEL", "destination": "COK", "type": "departure", "scheduledTime": "12:40", "gate": "D1", "status": "cancelled" },
+  { "flightNumber": "SG 998", "airline": "SpiceJet", "origin": "DEL", "destination": "JAI", "type": "departure", "scheduledTime": "13:05", "gate": "C2", "status": "ontime" },
+  { "flightNumber": "6E 455", "airline": "IndiGo", "origin": "IXC", "destination": "DEL", "type": "arrival", "scheduledTime": "13:20", "gate": "A5", "status": "landed" },
+  { "flightNumber": "UK 733", "airline": "Vistara", "origin": "DEL", "destination": "GAU", "type": "departure", "scheduledTime": "13:45", "gate": "D4", "status": "delayed" },
+  { "flightNumber": "AI 202", "airline": "Air India", "origin": "SXR", "destination": "DEL", "type": "arrival", "scheduledTime": "14:00", "gate": "B5", "status": "ontime" },
+  { "flightNumber": "6E 887", "airline": "IndiGo", "origin": "DEL", "destination": "IXB", "type": "departure", "scheduledTime": "14:15", "gate": "C3", "status": "ontime" },
+  { "flightNumber": "SG 341", "airline": "SpiceJet", "origin": "DEL", "destination": "RPR", "type": "departure", "scheduledTime": "14:30", "gate": "A1", "status": "ontime" }
+]

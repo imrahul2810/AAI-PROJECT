@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAI Flight Status Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-left">
+      <div class="logo-mark">AAI</div>
+      <div class="header-titles">
+        <h1>Flight Status Dashboard</h1>
+        <p class="subtitle">Airports Authority of India &mdash; Live Board</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="clock" id="liveClock">--:--:--</div>
+      <div class="data-mode" id="dataMode">MODE: LOADING</div>
+    </div>
+  </header>
+
+  <!-- Controls: Search + Filters -->
+  <section class="controls">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search flight number, airline, or city...">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="filter-buttons" id="filterButtons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="arrival">Arrivals</button>
+      <button class="filter-btn" data-filter="departure">Departures</button>
+      <button class="filter-btn" data-filter="delayed">Delayed</button>
+      <button class="filter-btn" data-filter="cancelled">Cancelled</button>
+    </div>
+  </section>
+
+  <!-- Stats bar -->
+  <section class="stats-bar" id="statsBar">
+    <div class="stat">
+      <span class="stat-value" id="statTotal">0</span>
+      <span class="stat-label">Total Flights</span>
+    </div>
+    <div class="stat stat-green">
+      <span class="stat-value" id="statOnTime">0</span>
+      <span class="stat-label">On Time</span>
+    </div>
+    <div class="stat stat-amber">
+      <span class="stat-value" id="statDelayed">0</span>
+      <span class="stat-label">Delayed</span>
+    </div>
+    <div class="stat stat-red">
+      <span class="stat-value" id="statCancelled">0</span>
+      <span class="stat-label">Cancelled</span>
+    </div>
+  </section>
+
+  <!-- Split-flap board header row -->
+  <section class="board-wrapper">
+    <div class="board-header-row">
+      <span class="col col-time">TIME</span>
+      <span class="col col-flight">FLIGHT</span>
+      <span class="col col-airline">AIRLINE</span>
+      <span class="col col-route">ROUTE</span>
+      <span class="col col-gate">GATE</span>
+      <span class="col col-status">STATUS</span>
+    </div>
+
+    <!-- Flight rows get injected here by script.js -->
+    <div class="board-body" id="boardBody">
+      <div class="loading-message" id="loadingMessage">Loading flight data...</div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Data refreshes automatically &middot; Source: <span id="sourceLabel">AviationStack API</span></p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
